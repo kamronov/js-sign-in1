@@ -28,12 +28,13 @@ ElOpen.addEventListener('click', function (e) {
             elInpEmail.style.boxShadow ='none'
             elInpPassword.style.border ='1px solid #FFFFFF'
             elInpPassword.style.boxShadow ='none'
+            elInpEmail.value = ''
+            elInpPassword.value = ''
         }, 1000);
         setTimeout(()=>{
             body.style.opacity = '0.8'
             elSpinner.style.display ='block'
         },100)
-        console.log('go');
     }
     setTimeout(()=>{
             body.style.opacity = '1'
@@ -43,5 +44,7 @@ ElOpen.addEventListener('click', function (e) {
         elSpinner.style.display ='none'
         ElModal.classList.remove('openBlock');
     },3000)
+    
+
 })
 
